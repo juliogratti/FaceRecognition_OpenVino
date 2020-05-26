@@ -35,7 +35,7 @@ while Count < 10:
             #else:
 
             frame = cv2.resize(gray[y: y+h, x: x+w], (largura, altura))
-            cv2.imwrite("data/" + Name + "." + str(Count) + ".jpg", frame)
+            cv2.imwrite("data/" + Name + "_" + str(Count) + ".jpg", frame)
             cv2.waitKey(200)
             cv2.imshow("CAPTURED PHOTO", frame)                                                     # show the captured image
             Count = Count + 1

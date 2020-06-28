@@ -21,7 +21,7 @@ Name = input('Enter Your Name ')
 Count = 0
 cap = cv2.VideoCapture(0)                                                                           # Camera object
 
-while Count < 10:
+while Count < 50:
     ret, img = cap.read()
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)                                                    # Convert the Camera to graySe
     if np.average(gray) > 110:                                                                      # Testing the brightness of the image

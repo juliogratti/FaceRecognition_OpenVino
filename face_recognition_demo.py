@@ -281,7 +281,7 @@ class Visualizer:
                       tuple(roi.position), tuple(roi.position + roi.size),
                       (0, 220, 0), 2)
 
-        # Draw identity label
+        # Draw identik, ty label
         text_scale = 0.5
         font = cv2.FONT_HERSHEY_SIMPLEX
         text_size = cv2.getTextSize("H1", font, text_scale, 1)
